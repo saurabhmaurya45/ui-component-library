@@ -1,34 +1,227 @@
-body{
-    margin: 0;
+body {
+   margin: 0;
+   background-color: rgba(179, 205, 228, 0.865);
 }
-.navbar{
-    top:0px;
-    height: 44px;
-    color: white;
-    background-color: blue;
-    display: flex;
-    flex-direction: column;
-  
-    background-image: linear-gradient(to right, rgb(72, 162, 218) , rgb(153, 0, 255));
+
+.navbar {
+   top: 0px;
+   height: 48px;
+   color: white;
+   background-color: blue;
+   display: flex;
+   flex-direction: column;
+
+   background-image: linear-gradient(to right, #1B0B54, rgb(105, 29, 155));
 }
-.left-nav{
-    position: absolute;
-    display: flex;
-    /* background-color: green; */
-    left: 10px;
-    justify-content:space-between;
-    align-items: center;
-    width: 40%;
-    padding: 10px;
+
+.left-nav {
+   position: absolute;
+   display: flex;
+   /* background-color: green; */
+   left: 10px;
+   justify-content: space-between;
+   align-items: center;
+   width: 40%;
+   padding: 10px;
+   font-family: 'Signika', sans-serif;
+
+}
+
+.left-nav :hover{
+
+      color: #fff;
+      text-shadow:
+        /* White glow */
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        /* purple glow */
+        0 0 42px rgb(162, 0, 255),
+        0 0 82px  rgb(162, 0, 255),
+        0 0 92px  rgb(162, 0, 255),
+        0 0 102px  rgb(162, 0, 255),
+        0 0 151px   rgb(162, 0, 255);
     
 }
-.right-nav{
-    position: absolute;
-    display: flex;
-    right: 10px;
-    justify-content:space-between;
-    align-items: center;
-    width: 40%;
-    padding: 10px;
 
+
+.logo img {
+   height: 38px;
+   width: 110px;
+   margin-top: -5px;
+}
+
+.right-nav {
+   position: absolute;
+   display: flex;
+   right: 10px;
+   justify-content: space-between;
+   align-items: center;
+   width: 10%;
+   padding: 10px;
+
+}
+
+
+.right-nav :hover{
+ 
+   box-shadow:
+     /* White glow */
+     0 0 20px #fff,
+     0 0 20px #fff,
+     0 0 21px rgb(138, 59, 158);
+ 
+}
+
+.twitter {
+
+   height: 30px;
+   width: 30px;
+   background-color: azure;
+   border-radius: 4px;
+   border: 1px solid black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.twitter img {
+   height: 20px;
+   width: 23px;
+
+}
+
+.git-logo {
+
+   height: 30px;
+   width: 30px;
+   background-color: azure;
+   border-radius: 4px;
+   border: 1px solid black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.git-logo img {
+   height: 20px;
+   width: 20px;
+
+}
+
+.dark-mode {
+
+   height: 30px;
+   width: 30px;
+   background-color: azure;
+   border-radius: 4px;
+   border: 1px solid black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.dark-mode img {
+   height: 20px;
+   width: 20px;
+
+}
+
+
+
+.s1-div {
+   display: flex;
+   background-color: rgb(210, 227, 242);
+   height: 400px;
+   width: 100%;
+
+}
+
+.left-div {
+   height: 400px;
+   width: 510px;
+   /* background-color: blueviolet; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   left: 50px;
+
+}
+
+.right-div {
+   height: 400px;
+   width: 620px;
+   /* background-color: rgb(226, 43, 101); */
+   right: 10px;
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.text-1 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 10px;
+}
+
+.s1-div h1 {
+   font-family: 'Secular One', sans-serif;
+   font-size: 30px;
+   color: rgb(47, 85, 198);
+}
+
+.s1-div h3 {
+   font-family: 'Philosopher', sans-serif;
+   color: #4f435a;
+}
+
+.s1-div h4 {
+   font-family: 'Philosopher', sans-serif;
+   color: #403447;
+}
+
+.right-div img {
+   height: 400px;
+   width: 410px;
+
+}
+
+.left-div button {
+   background-image: linear-gradient(to right, #6640ed, rgb(138, 78, 178));
+   border: none;
+   color: white;
+   padding: 10px 28px;
+   text-align: center;
+   text-decoration: none;
+   border-radius: 3px;
+   font-size: 16px;
+   cursor: pointer;
+   -webkit-transition-duration: 0.4s;
+   /* Safari */
+   transition-duration: 0.4s;
+}
+
+.left-div button:hover {
+   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.component-num {
+   height: 50px;
+   width: 100px;
+
+}
+
+.component-num h2 {
+   color: rgb(37, 23, 45);
+   font-size: 20px;
+
+}
+
+.component-num h3 {
+   line-height: 0;
+   color: rgb(44, 36, 49);
+   font-size: 17px;
 }
