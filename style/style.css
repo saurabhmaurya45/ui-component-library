@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+}
+.navbar{
+    top:0px;
+    height: 44px;
+    color: white;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+  
+    background-image: linear-gradient(to right, rgb(72, 162, 218) , rgb(153, 0, 255));
+}
+.left-nav{
+    position: absolute;
+    display: flex;
+    /* background-color: green; */
+    left: 10px;
+    justify-content:space-between;
+    align-items: center;
+    width: 40%;
+    padding: 10px;
+    
+}
+.right-nav{
+    position: absolute;
+    display: flex;
+    right: 10px;
+    justify-content:space-between;
+    align-items: center;
+    width: 40%;
+    padding: 10px;
+
+}
