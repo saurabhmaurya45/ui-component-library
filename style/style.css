@@ -1,26 +1,4 @@
-<<<<<<< HEAD
-body{
-    margin: 0;
-}
-.navbar{
-    top:0px;
-    height: 44px;
-    color: white;
-    background-color: blue;
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(to right, rgb(72, 162, 218) , rgb(153, 0, 255));
-}
-.left-nav{
-    position: absolute;
-    display: flex;
-    /* background-color: green; */
-    left: 10px;
-    justify-content:space-between;
-    align-items: center;
-    width: 40%;
-    padding: 10px;
-=======
+
 body {
    margin: 0;
    background-color: rgba(179, 205, 228, 0.865);
@@ -64,8 +42,6 @@ body {
         0 0 92px  rgb(162, 0, 255),
         0 0 102px  rgb(162, 0, 255),
         0 0 151px   rgb(162, 0, 255);
->>>>>>> 3d3873a0d9dc75d814d2a2070ae8d834720fe49d
-    
 }
 
 
@@ -240,8 +216,9 @@ footer .f2{
 footer .f2 p{
     text-align: center;
     padding: 15px;
+}
+/* footer ends */
 
-=======
 .s1-div h4 {
    font-family: 'Philosopher', sans-serif;
    color: #403447;
@@ -288,5 +265,5 @@ footer .f2 p{
    line-height: 0;
    color: rgb(44, 36, 49);
    font-size: 17px;
->>>>>>> 3d3873a0d9dc75d814d2a2070ae8d834720fe49d
+
 }
