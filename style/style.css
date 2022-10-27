@@ -180,48 +180,10 @@ body {
    color: #4f435a;
 }
 
-/* section 1 ends here */
 
 
 
 
-/* footer start */
-footer{
-    background-color: #f1f1f1;
-    /* margin: auto;
-    width: 60%; */
-}
-footer .f1{
-    display: flex;
-    width: 30%;
-    margin: auto;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 16px;
-    padding: 30px;
-
-}
-footer .f1 a{
-    color: black;   
-    text-decoration: none;
-
-}
-.footer-icon:hover{
-    width: 30px;
-    height: 30px;
-    background-color: red;
-    border-radius: 50%;
-}
-
-
-footer .f2{
-    background-color: rgba(0, 0, 0, 0.2);
-}
-footer .f2 p{
-    text-align: center;
-    padding: 15px;
-}
-/* footer ends */
 
 .s1-div h4 {
    font-family: 'Philosopher', sans-serif;
@@ -271,3 +233,44 @@ footer .f2 p{
    font-size: 17px;
 
 }
+/* section 1 ends here */
+
+
+
+/* footer start */
+footer{
+    background-color: #f1f1f1;
+    /* margin: auto;
+    width: 60%; */
+}
+footer .f1{
+    display: flex;
+    width: 30%;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+    padding: 30px;
+
+}
+footer .f1 a{
+    color: black;   
+    text-decoration: none;
+
+}
+.footer-icon:hover{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+
+footer .f2{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+footer .f2 p{
+    text-align: center;
+    padding: 15px;
+}
+/* footer ends */
