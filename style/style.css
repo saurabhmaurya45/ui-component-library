@@ -1,20 +1,20 @@
 @import url("./code-snippet.css");
 
 body {
-  margin: 0;
-  background-color: rgba(179, 205, 228, 0.865);
+   margin: 0;
+   background-color: rgba(179, 205, 228, 0.865);
+   min-height: 100px;
 }
 
 /* navbar start */
 .navbar {
-  top: 0px;
-  height: 48px;
-  color: white;
-  background-color: blue;
-  display: flex;
-  flex-direction: column;
-
-  background-image: linear-gradient(to right, #1b0b54, rgb(105, 29, 155));
+   top: 0px;
+   height: 48px;
+   color: white;
+   background-color: blue;
+   display: flex;
+   flex-direction: column;
+   background-image: linear-gradient(to right, #1B0B54, rgb(105, 29, 155));
 }
 
 .left-nav {
@@ -29,13 +29,20 @@ body {
   font-family: "Signika", sans-serif;
 }
 
-.left-nav :hover {
-  color: #fff;
-  text-shadow:
-        /* White glow */ 0 0 7px #fff, 0 0 10px #fff,
-    0 0 21px #fff, /* purple glow */ 0 0 42px rgb(162, 0, 255),
-    0 0 82px rgb(162, 0, 255), 0 0 92px rgb(162, 0, 255),
-    0 0 102px rgb(162, 0, 255), 0 0 151px rgb(162, 0, 255);
+.left-nav :hover{
+      color: #fff;
+      cursor: pointer;
+      text-shadow:
+        /* White glow */
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        /* purple glow */
+        0 0 42px rgb(162, 0, 255),
+        0 0 82px  rgb(162, 0, 255),
+        0 0 92px  rgb(162, 0, 255),
+        0 0 102px  rgb(162, 0, 255),
+        0 0 151px   rgb(162, 0, 255);
 }
 
 .logo img {
@@ -54,26 +61,34 @@ body {
   padding: 10px;
 }
 
-.right-nav :hover {
-  box-shadow:
-     /* White glow */ 0 0 20px #fff, 0 0 20px #fff,
-    0 0 21px rgb(138, 59, 158);
+.navbar a{
+   color: white;
+   text-decoration: none;
 }
 
-.twitter {
-  height: 30px;
-  width: 30px;
-  background-color: azure;
-  border-radius: 4px;
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.right-nav :hover{
+   cursor: pointer;
+   box-shadow:
+     /* White glow */
+     0 0 20px #fff,
+     0 0 20px #fff,
+     0 0 21px rgb(138, 59, 158); 
 }
 
-.twitter img {
-  height: 20px;
-  width: 23px;
+.navbar .twitter {
+   height: 30px;
+   width: 30px;
+   background-color: azure;
+   border-radius: 4px;
+   border: 1px solid black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.navbar .twitter img {
+   height: 20px;
+   width: 23px;
 }
 
 .git-logo {
@@ -257,37 +272,56 @@ code:not(.language-html code) {
 
 /* section 2 code snippet ends here */
 
+
 /* footer start */
-footer {
-  background-color: #f1f1f1;
-  /* margin: auto;
-    width: 60%; */
-}
-footer .f1 {
-  display: flex;
-  width: 30%;
-  margin: auto;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 16px;
-  padding: 30px;
-}
-footer .f1 a {
-  color: black;
-  text-decoration: none;
-}
-.footer-icon:hover {
-  width: 30px;
-  height: 30px;
-  background-color: red;
-  border-radius: 50%;
+footer{
+    background-color: #f1f1f1;
+    display:flex; 
+    flex-direction:column; 
+    justify-content:space-between;
+    position: relative;
+    bottom: 0px;
+    /* margin: auto; */
+    /* width: 60%; */
 }
 
-footer .f2 {
-  background-color: rgba(0, 0, 0, 0.2);
+footer .f1{
+    background-color: rgba(0, 0, 0, 0.05);    
 }
-footer .f2 p {
-  text-align: center;
-  padding: 15px;
+footer .footer-icons{
+    display: flex;
+    width: 30%;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+    padding: 40px;
+}
+footer .footer-icon{
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .f1 a{
+    color: black;   
+    text-decoration: none;
+    visibility: visible;
+}
+footer .footer-icon:hover{
+    visibility: visible;
+}
+
+footer .f2{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+footer .f2 p{
+    text-align: center;
+    padding: 5px;
 }
 /* footer ends */
