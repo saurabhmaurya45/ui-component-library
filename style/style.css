@@ -223,18 +223,19 @@ body {
 .code-snippet {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .code-snippet div.code-toolbar {
-   position: absolute;
+  position: absolute;
+  bottom: -120px;
   width: 60vw;
 }
 
 .code-snippet div.code-toolbar > .toolbar {
-   position: absolute;
-  top: -1.0rem;
-  right: 4.2rem;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.0rem;
 }
 
 code:not(.language-html code) {
@@ -244,7 +245,7 @@ code:not(.language-html code) {
 }
 
 .code-snippet-section pre {
-   position: absolute;
+   /* position: absolute; */
    top: -40px; 
   border: 2px solid black;
   border-radius: 10px;
