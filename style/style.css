@@ -243,7 +243,6 @@ body {
 }
 
 .code-snippet div.code-toolbar {
-  position: absolute;
   bottom: -120px;
   width: 60vw;
 }
