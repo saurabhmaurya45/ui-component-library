@@ -277,7 +277,7 @@ code:not(.language-html code) {
 /* footer start */
 footer{
    background-color: #f1f1f1;
-   position: fixed;
+   /* position: fixed; */
    width: 100%;
    bottom: 0px;
    display: flex;
