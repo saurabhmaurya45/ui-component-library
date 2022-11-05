@@ -1,0 +1,213 @@
+/* navbar start */
+.navbar {
+    position: sticky;
+    z-index: 2;
+    top: 0px;
+    height: 48px;
+    color: white;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    background-image: linear-gradient(to right, #1b0b54, rgb(105, 29, 155));
+  }
+  
+  .left-nav {
+    position: absolute;
+    display: flex;
+    /* background-color: green; */
+    left: 10px;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    padding: 10px;
+    font-family: "Signika", sans-serif;
+  }
+  
+  .left-nav :hover {
+    color: #fff;
+    cursor: pointer;
+    text-shadow:
+          /* White glow */ 0 0 7px #fff, 0 0 10px #fff,
+      0 0 21px #fff, /* purple glow */ 0 0 42px rgb(162, 0, 255),
+      0 0 82px rgb(162, 0, 255), 0 0 92px rgb(162, 0, 255),
+      0 0 102px rgb(162, 0, 255), 0 0 151px rgb(162, 0, 255);
+  }
+  @media (max-width:1000px){
+     .left-nav{
+        width: 45%;
+     }
+  }
+  
+  @media (max-width:880px){
+     .left-nav{
+        width: 55%;
+     }
+  }
+  
+  /* @media (max-width:780px){
+     .left-nav{
+        width: 55%;
+     }
+  } */
+  
+  .logo img {
+    height: 38px;
+    width: 110px;
+    margin-top: -5px;
+  }
+  
+  .right-nav {
+    position: absolute;
+    display: flex;
+    right: 10px;
+    justify-content: space-between;
+    align-items: center;
+    width: 10%;
+    padding: 10px;
+  }
+  
+  @media (max-width:1000px){
+     .right-nav{
+        width: 13%;
+     }
+  }
+  
+  @media (max-width:880px){
+     .right-nav{
+        width: 14%;
+     }
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .right-nav :hover {
+    cursor: pointer;
+    box-shadow:
+       /* White glow */ 0 0 20px #fff, 0 0 20px #fff,
+      0 0 21px rgb(138, 59, 158);
+  }
+  
+  .navbar .twitter {
+    height: 30px;
+    width: 30px;
+    background-color: azure;
+    border-radius: 4px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar .twitter img {
+    height: 20px;
+    width: 23px;
+  }
+  
+  .git-logo {
+    height: 30px;
+    width: 30px;
+    background-color: azure;
+    border-radius: 4px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .git-logo img {
+    height: 20px;
+    width: 20px;
+  }
+  
+  .dark-mode {
+    height: 30px;
+    width: 30px;
+    background-color: azure;
+    border-radius: 4px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dark-mode img {
+    height: 20px;
+    width: 20px;
+  }
+  
+  /* mobile navbar(responsive) */
+  .mobile-nav-btn {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50px;
+    padding: 10px;
+    display: none;
+    cursor: pointer;
+  }
+  .mobile-nav-btn-left{
+     left: 10px;
+  }
+  .mobile-nav-btn-right{
+     right: -12px;
+  }
+  .mobile-nav-icon[name="close-outline"] {
+    display: none;
+  }
+  
+  .mobile-nav-icon {
+    width: 30px;
+    height: 30px;
+    visibility: inherit;
+  }
+  
+  /* responsive codes..///media Query */
+  
+  @media (max-width: 780px) {
+    .mobile-nav-btn {
+      display: block;
+      z-index: 99;
+    }
+    .left-nav {
+       display: none;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       width: 90%;
+       position: absolute;
+       font-size: 20px;
+       height: 75%;
+       line-height: 2.5;
+     }
+     
+    .right-nav {
+      display: none;
+      position: absolute;
+      width: 90%;
+     bottom: 20px;
+     justify-content: center;
+     align-items: center;
+    }
+  
+    /* .active .left-nav{
+     transform: translateX(0);
+     opacity: 1;
+     visibility: visible;
+     pointer-events: auto;
+   }
+  
+    .active .mobile-nav-btn .mobile-nav-icon[name="close-outline"]{
+     display: block;
+   }
+   .active .mobile-nav-btn .mobile-nav-icon[name="menu-outline"]{
+     display: none;
+   } */
+  }
+  
+  /* navbar ends here */
+  
