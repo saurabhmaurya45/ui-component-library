@@ -1,11 +1,15 @@
 var script = document.createElement('script');   
 script.src = './js/js/uiComponentLibrary.min.js'   
-document.head.appendChild(script)
+document.head.appendChild(script);
 
+let loader = document.querySelector(".loader");
 
-var script = document.createElement('script');   
-script.src = './js/js/uiComponentLibrary.min.js'   
-document.head.appendChild(script)
+if (loader) {
+    setTimeout(() => {
+        loader.style.display = "none"
+    }, 3000)
+}
+
 let navstate = true;
 let leftLststate = true;
 
