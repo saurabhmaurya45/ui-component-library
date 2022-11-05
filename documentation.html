@@ -113,13 +113,13 @@
                 <h3> <img src="image/get-start-logo.png" alt="" class="logo-icon"> Getting Started</h3>
                 <ul>
                     <a href="#introduction-docs">
-                        <li class="active">Introduction</li>
+                        <li class="tablinks" id="defaultOpen" onclick="tabFunc(event,'introduction-docs')">Introduction</li>
                     </a>
                     <a href="#installation-docs">
-                        <li>Installation</li>
+                        <li class="tablinks" onclick="tabFunc(event,'installation-docs')">Installation</li>
                     </a>
                     <a href="#devices-docs">
-                        <li>Browsers & Devices</li>
+                        <li class="tablinks" onclick="tabFunc(event,'devices-docs')">Browsers & Devices</li>
                     </a>
                 </ul>
                 <hr>
@@ -129,47 +129,18 @@
                 <h3> <img src="image/Component-logo.jfif" alt="" class="logo-icon"> Components</h3>
                 <ul>
                     <a href="#buttons-docs">
-                        <li>Button</li>
+                        <li class="tablinks" onclick="tabFunc(event,'buttons-docs')">Button</li>
                     </a>
                     <a href="#card-docs">
-                        <li>Card</li>
+                        <li class="tablinks" onclick="tabFunc(event,'card-docs')">Card</li>
                     </a>
                     <a href="#list-docs">
-                        <li>List</li>
+                        <li class="tablinks" onclick="tabFunc(event,'list-docs')">List</li>
                     </a>
-                    <a href="avatar-docs">
-                        <li>Avatar</li>
+                    <a href="#avatar-docs">
+                        <li class="tablinks" onclick="tabFunc(event,'avatar-docs')">Avatar</li>
                     </a>
-                    <a href="#card-docs">
-                        <li></li>
-                    </a>
-                    <a href="#">
-                        <li></li>
-                    </a>
-                    <a href="#">
-                        <li></li>
-                    </a>
-                    <a href="#">
-                        <li></li>
-                    </a>
-                    <a href="#">
-                        <li></li>
-                    </a>
-                    <a href="#">
-                        <li></li>
-                    </a>
-                    <a href="#">
-                        <li></li>
-                    </a>
-                    <a href="#">
-                        <li></li>
-                    </a>
-                    <a href="#">
-                        <li></li>
-                    </a>
-                    <a href="#">
-                        <li></li>
-                    </a>
+                    
                 </ul>
             </div>
 
@@ -180,246 +151,26 @@
 
         <!-- center section start -->
         <div class="center-section">
-
-            <!-- introduction-docs -->
-            <div id="introduction-docs" class="introduction-docs">
-                <div class="heading-1">
-                    <h1>WELCOME</h1>
-                </div>
-                <span>
-                    <p>Welcome to the our documentation!
-
-                        We allow you to make beautiful, modern, and fast websites/applications regardless of your design
-                        experience.
-                    </p>
-                    <div class="intro-list">
-                        <div>
-                            <h4> A forward-thinking library of web components.</h4>
-                            <ul>
-                                <li> Works with all frameworks 🧩</li>
-                                <li> Works with CDNs 🚛 </li>
-                                <li> Fully customizable with CSS 🎨 </li>
-                                <li> Includes a dark theme 🌛</li>
-                                <li> Built with accessibility in mind ♿️</li>
-                                <li> Open source 😸</li>
-                            </ul>
-                            Designed in India by Saurabh & Neha.
-                        </div>
-                        <div class="intro-pic">
-                            <img src="image/intro-pic.svg" alt="">
-                        </div>
-                    </div>
-
-
-
-                </span>
-
-                <h2>Quick Start</h2>
-
-                <p>Get started by including production-ready CSS and JavaScript via CDN links without the need
-                    for
-                    any build steps.</p>
-                <ol>
-                    <li>Create a new <code>index.html</code> file in your project root. Include the
-                        <code>&lt;meta name="viewport"&gt;</code> tag as well for proper responsive behavior in mobile
-                        devices.
-                    </li>
-
-                    <pre class="language-html"><code>&lt;!doctype html&gt;
-            &lt;html lang="en"&gt;
-                &lt;head&gt;
-                    &lt;meta charset="utf-8"&gt;
-                    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-                    &lt;tilte&gt;WebHelpUI demo &lt;/tilte&gt;
-                &lt;/head&gt;
-                &lt;body&gt;
-                    &lt;h1&gt;Namaste 🙏, world!&lt;/h1&gt;
-                &lt;/body&gt;
-            &lt;/html&gt;</code></pre>
-
-
-
-
-                    <li>
-                        Include WebHelpUI's CSS and JS. &Place the <code>&lt;link&gt;</code> tag in the
-                        <code>&lt;head&gt;&lt;/head&gt;</code> for our CSS, and the
-                        <code>&lt;script&gt;&lt;/script&gt;</code> tag for our JavaScript bundle before the closing
-                        <code>&lt;/body&gt;</code>
-                    </li>
-
-                    <pre class="language-html"><code>&lt;!doctype html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-&lt;meta charset="utf-8"&gt;
-&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-&lt;title&gt;WebHelpUI demo &lt;/title&gt;
-&lt;link href="https://webhelp-ui.netlify.app/css/webhelpui.use.css" rel="stylesheet" &gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;h1&gt;Namaste 🙏, world!    &lt;/h1&gt;
-&lt;script src="https://webhelp-ui.netlify.app/js/webhelpui.use.js" &gt;  &lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
-
-
-
-
-<li>
-    Namaste 🙏, world! Open the page in your browser to see your rendered page. Now you can
-    start building with WebHelpUI by creating your own layout, adding dozens of components, and
-    utilizing our official examples.
-</li>
-
-                </ol>
-
-
-
-
-
+            <div class="intro intro1"  id="introduction-docs">
+                
             </div>
-            <!-- introduction-docs end -->
+            <div class="intro intro2" id="installation-docs">
+                
+            </div>
+            <div class="intro intro3" id="devices-docs">
+                
+            </div>
+            <div class="intro intro4" id="buttons-docs">
+                
+            </div>
+            <div class="intro intro5" id="card-docs">
+                
+            </div>
+            <div class="intro intro6" id="list-docs">
+                
+            </div>
 
-            <!-- installation html start -->
-
-<div class="invisible docs-component" id="installation-docs">
-    <h1>How to install ?</h1>
-    <p>To use all features of WebHelpUI, Just Add CDN link of CSS and JS in <code>head</code> tag of
-        <code>index.html</code> file. After adding CDN links Just search for your UI like navbar, button,
-        form etc in WebHelpUI components and Copy the HTML code given then add the code in your HTML file
-        where you want to add this UI.
-    </p>
-
-    <h2>CDN Link</h2>
-    <pre class="language-html"><code>&lt;link rel="stylesheet" href="https://webhelp-ui.netlify.app/css/webhelpui.use.css"&gt;
-&lt;script src="https://webhelp-ui.netlify.app/js/webhelpui.use.js"&gt;&lt;/script&gt;</code></pre>
-
-    <h3>Examples: <small>Add button in your website</small></h3>
-
-    <ol>
-        <li>Add CDN Link of css and JavaScript(JS optional) in <code>head</code> tag</li>
-        <pre class="language-html"><code>&lt;head&gt;
-&lt;meta charset="UTF-8"&gt;
-&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
-&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-&lt;link rel="stylesheet" href="https://webhelp-ui.netlify.app/css/webhelpui.use.css"&gt;
-&lt;script src="https://webhelp-ui.netlify.app/js/webhelpui.use.js" &gt;&lt;/script&gt;
-&lt;title&gt;Button-Preview&lt;/title&gt;
-&lt;/head&gt;</code></pre>
-
-        <li>Copy the HTML code of Button of your choice from WebHelpUI components</li>
-        <div class="button-preview">
-            <button id="btn-primary">Primary</button>
-            <button id="btn-secondary">Secondary</button>
-        </div>
-        <pre class="language-html"><code>&lt;button id="btn-primary"&gt;Primary&lt;/button&gt;
-&lt;button id="btn-secondary"&gt;Secondary&lt;/button&gt;</code></pre>
-    </ol>
-
-
-
-</div>
-
-
-
-<!-- installation html end -->
-
-<!-- browsers and devices html start -->
-<div class="invisible docs-component" id="devices-docs">
-    <h1>Browsers and devices</h1>
-    <p>WebHelpUI supported in all Browsers and all devices.
-    </p>
-    <h2>Supported Browsers</h2>
-    <ul>
-        <li>Chrome</li>
-        <li>FireFox</li>
-        <li>Safari</li>
-        <li>Microsoft Edge</li>
-        <li>Opera</li>
-        <li>Brave</li>
-        <li>Both Android Browsers & Desktop Browsers</li>
-    </ul>
-    <h2>Responsiveness</h2>
-    <p>A great way to create a responsive design, is to use a responsive style sheet, like
-        <code>webhelpui.use.css</code>.
-        WebHelpUI makes it easy to develop sites that look nice at any size!
-    </p>
-    <p>All UI which you will use from WebHelpUI components is fully responsive and changes according to the
-        screen size.</p>
-    <h3>Example: </h3>
-    <p>Let's Take an Exapmle of Navbar in Desktop and Mobile</p>
-    <div class="mobile-desktop-nav-preview">
-        <div class="desktop-nav-preview">
-            <nav class="desktop">
-                <div class="nav-left">
-                    <div class="logo-nav">
-                        <a href="#devices-docs"><img src="/Images/logo-final.png" alt="logo"></a>
-                    </div>
-                    <ul>
-                        <a href="#devices-docs">
-                            <li class="active">Home</li>
-                        </a>
-                        <a href="#devices-docs">
-                            <li>Documentation</li>
-                        </a>
-                    </ul>
-                </div>
-
-                <div class="nav-right">
-                    <img src="/Images/github.png" alt="">
-                    <img src="/Images/linkedin.png" alt="">
-                    <img src="/Images/twitter.png" alt="">
-                </div>
-            </nav>
-        </div>
-
-        <div class="mobile-nav-preview">
-            <b>Mobile & Tablets</b>
-            <nav class="mobile">
-                <div class="nav-head">
-                    <div class="nav-left">
-                        <div class="logo-nav">
-                            <a href="#devices-docs"><img src="/Images/logo-final.png" alt="logo"></a>
-                        </div>
-                    </div>
-
-                    <div class="nav-right">
-                        <img src="/Images/menu-outline.svg" alt="">
-                    </div>
-                </div>
-            </nav>
-        </div>
-
-    </div>
-    <h2>Devices</h2>
-    <p>We have devided all the devices into three categories based on their screen width.</p>
-    <ul style="margin: 20px 0px;">
-        <li>Mobile Devices ( <code>width < 550px</code> )</li>
-        <li>Tablets ( <code>550px < width < 800px</code> ) </li>
-        <li>Desktop Devices ( <code>width > 800px</code> )</li>
-    </ul>
-
-
-</div>
-
-
-
-<!-- browsers and devices html end -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            
         </div>
 
 
