@@ -1,3 +1,13 @@
 @import url("./button.css");
 @import url("./login_form.css");
 @import url("../navbar.css");
+/* nav-code */
+.desktop img {
+    height: 46px;
+    width: 850px;
+  }
+  .mobile img{
+    height: 46px;
+    width: 450px;
+  }
+@import url("./cards.css");
