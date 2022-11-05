@@ -60,7 +60,26 @@
     
   }
   
-  
+  button#btn-primary, button#btn-secondary {
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-family: var(--font-2);
+    border: 0.5px solid transparent;
+}
+
+button#btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+button#btn-secondary {
+  background-color: var(--nav-color);
+  color: var(--primary-color);
+}
+
   
   
   
