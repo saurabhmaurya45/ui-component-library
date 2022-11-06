@@ -63,7 +63,6 @@
     </div>
 
 
-    </div>
     <!-- navbar end -->
 
     <!-- main section  start -->
@@ -802,7 +801,6 @@
             </div>
             <div class="intro" id="loader-docs">
                 <!-- Loader Component  -->
-
             <div class="invisible docs-component" id="loader-docs">
                 <h1>Loader</h1>
                 <p>Loader activates when the page is loading and is shows a loading effect on website</p>
@@ -828,11 +826,11 @@
                     <div class="whi-loader-preview">
                         <img src="/image/loader-5.gif" alt="">
                     </div>
-
+                </div>
                     <pre class="language-html"><code>&lt;div class="whi-loader"&gt;
     &lt;img src="/image/loader-5.gif" alt=""&gt;
 &lt;/div&gt;</code></pre>
-
+                
                     <h2 id="loader-2">Loader-2</h2>
                     <div class="loader-preview">
                         <div class="whi-loader-preview">
@@ -907,10 +905,7 @@
                 </div>
 
             </div>
-
-
             <!-- progress bar start -->
-
             <div class="intro" id="progress-bar-docs">
 
                 <h1> Progress Bar</h1>
@@ -920,10 +915,10 @@
                 </p>
 
                 <pre class="language-html"><code>&lt;div class="progress"&gt;
-        &lt;div class="progress-bar" &gt;
-          &lt;span class="sr-only"&gt;70% Complete&lt;/span&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;</code></pre>
+    &lt;div class="progress-bar" &gt;
+        &lt;span class="sr-only"&gt;70% Complete&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 
 
                 <div class="progress">
@@ -935,14 +930,11 @@
                 <h2>Progress Bar With Label</h2>
                 <p>Remove the <code>.sr-only </code>class from the progress bar to show a visible percentage:</p>
 
-                <pre class="language-html"> <code>
-
-    &lt;div class="progress"&gt;
-    &lt;div class="progress-bar"  &gt;
+                <pre class="language-html"><code>&lt;div class="progress"&gt;
+    &lt;div class="progress-bar"&gt;
       70%
     &lt;/div&gt;
-  &lt;/div&gt;
-</code></pre>
+&lt;/div&gt;</code></pre>
 
                 <div class="progress">
                     <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
@@ -952,60 +944,54 @@
                 </div>
 
                 <h2>Rounded Progress bar</h2>
-                <pre class="language-html"><code> &lt;div class="progress-bar-2"&gt;
+                <pre class="language-html"><code>&lt;div class="progress-bar-2"&gt;
     &lt;span class="progress-bar-fill" style="width: 70%;"&gt;&lt;/span&gt;
 &lt;/div&gt;</code></pre>
                 <div class="progress-bar-2">
                     <span class="progress-bar-fill" style="width: 70%;"></span>
                 </div>
             </div>
-<!-- progess bar end -->
+            <!-- progess bar end -->
+            <!-- alert start -->
+            <div class="intro" id="alert-docs">
+                <h2>Alerts</h2>
+                <b> UI-component library provides an easy way to create predefined alert messages:</b>
 
-<!-- dropdown start -->
-<div class="intro" id="alert-docs">
-    
-        <h2>Alerts</h2>
- <b> UI-component library provides an easy way to create predefined alert messages:</b>
+                <div class="alert alert-success">
+                <strong>Success!</strong> This alert box could indicate a successful or positive action.
+                </div>
+                <div class="alert alert-info">
+                <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+                </div>
+                <div class="alert alert-warning">
+                <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+                </div>
+                <div class="alert alert-danger">
+                <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+                </div>
+                <p>Alerts are created with the <code> .alert</code>  class, followed by one of the four contextual classes <code> .alert-success</code>, <code>.alert-info</code>, <code>.alert-warning</code> or <code>.alert-danger:</code></p>
 
-        <div class="alert alert-success">
-          <strong>Success!</strong> This alert box could indicate a successful or positive action.
-        </div>
-        <div class="alert alert-info">
-          <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
-        </div>
-        <div class="alert alert-warning">
-          <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
-        </div>
-        <div class="alert alert-danger">
-          <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
-        </div>
-      <p>Alerts are created with the <code> .alert</code>  class, followed by one of the four contextual classes <code> .alert-success</code>, <code>.alert-info</code>, <code>.alert-warning</code> or <code>.alert-danger:</code></p>
-
-
-      <pre class="language-html"><code>
-
-        &lt;div class="alert alert-success"&gt;
-  &lt;strong&gt;Success!&lt;/strong&gt; Indicates a successful or positive action.
+                <pre class="language-html"><code>&lt;div class="alert alert-success"&gt;
+    &lt;strong&gt;Success!&lt;/strong&gt; Indicates a successful or positive action.
 &lt;/div&gt;
 
 &lt;div class="alert alert-info"&gt;
-  &lt;strong&gt;Info!&lt;/strong&gt; Indicates a neutral informative change or action.
+    &lt;strong&gt;Info!&lt;/strong&gt; Indicates a neutral informative change or action.
 &lt;/div&gt;
 
 &lt;div class="alert alert-warning"&gt;
-  &lt;strong&gt;Warning!&lt;/strong&gt; Indicates a warning that might need attention.
+    &lt;strong&gt;Warning!&lt;/strong&gt; Indicates a warning that might need attention.
 &lt;/div&gt;
 
 &lt;div class="alert alert-danger"&gt;
-  &lt;strong&gt;Danger!&lt;/strong&gt; Indicates a dangerous or potentially negative action.
-&lt;/div&gt;
-      </code></pre>
+    &lt;strong&gt;Danger!&lt;/strong&gt; Indicates a dangerous or potentially negative action.
+&lt;/div&gt;</code></pre>
 
 
-</div>
-
+            </div>
+            <!-- alert ends-->
         </div>
-
+        
 
         <!-- center section end -->
         <!-- right section start -->
