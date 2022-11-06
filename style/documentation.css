@@ -222,10 +222,16 @@
   width: 66.5%;
   height: 100vh;
   background-color: rgb(188, 190, 235);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin-top: 3px;
   margin-right: -43px;
   flex-direction: column;
-    overflow-y: scroll;
+  overflow-y: scroll;
+}
+.center-section h1,h2{
+  color:#0e0f46;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #acadeb;
 }
 .center-section .intro {
   width: 95%;
