@@ -113,7 +113,8 @@
                 <h3> <img src="image/get-start-logo.png" alt="" class="logo-icon"> Getting Started</h3>
                 <ul>
                     <a href="#introduction-docs">
-                        <li class="tablinks" id="defaultOpen" onclick="tabFunc(event,'introduction-docs')">Introduction</li>
+                        <li class="tablinks" id="defaultOpen" onclick="tabFunc(event,'introduction-docs')">Introduction
+                        </li>
                     </a>
                     <a href="#installation-docs">
                         <li class="tablinks" onclick="tabFunc(event,'installation-docs')">Installation</li>
@@ -146,8 +147,11 @@
                     <a href="#avatar-docs">
                         <li class="tablinks" onclick="tabFunc(event,'avatar-docs')">Avatar</li>
                     </a>
-                    <a href="#">
-                        <li class="tablinks" onclick="tabFunc(event,'')"></li>
+                    <a href="#progress-bar-docs">
+                        <li class="tablinks" onclick="tabFunc(event,'progress-bar-docs')">Progress Bar</li>
+                    </a>
+                    <a href="#alert-docs">
+                        <li class="tablinks" onclick="tabFunc(event,'alert-docs')"> Alert </li>
                     </a>
                     <a href="#">
                         <li class="tablinks" onclick="tabFunc(event,'')"></li>
@@ -176,10 +180,7 @@
                     <a href="#">
                         <li class="tablinks" onclick="tabFunc(event,'')"></li>
                     </a>
-                    <a href="#">
-                        <li class="tablinks" onclick="tabFunc(event,'')"></li>
-                    </a>
-                    
+
                 </ul>
             </div>
 
@@ -190,7 +191,7 @@
 
         <!-- center section start -->
         <div class="center-section">
-            <div class="intro"  id="introduction-docs">
+            <div class="intro" id="introduction-docs">
                 <div class="heading-1">
                     <h1>WELCOME</h1>
                 </div>
@@ -217,7 +218,7 @@
                             <img src="image/a.svg" alt="">
                         </div>
                     </div>
- 
+
                 </span>
 
                 <h2>Quick Start</h2>
@@ -242,7 +243,7 @@
         &lt;h1&gt;Hello world!&lt;/h1&gt;
     &lt;/body&gt;
 &lt;/html&gt;</code></pre>
- <li>
+                    <li>
                         Include CSS and JS links . &Place the <code>&lt;link&gt;</code> tag in the
                         <code>&lt;head&gt;&lt;/head&gt;</code> for our CSS, and the
                         <code>&lt;script&gt;&lt;/script&gt;</code> tag for our JavaScript bundle before the closing
@@ -338,7 +339,7 @@
 
                     <div class="mobile">
                         <img src="./image/mobile.png" alt="">
-                </div>
+                    </div>
 
                 </div>
                 <h2>Devices</h2>
@@ -352,34 +353,37 @@
             <div class="intro" id="buttons-docs">
                 <!-- Button Component  -->
 
-            <div class="invisible docs-component" id="buttons-docs">
-                <h1>Buttons</h1>
-                <p>Buttons are very important part of any website because buttons can link all the things and gives a
-                    good user experience.</p>
-                <p>Ui-Component-library provides different categories of buttons, you can pick any of them according to your
-                    requirement</p>
-                <ol>
-                    <li>Solid Buttons</li>
-                    <li>Outlined Buttons</li>
-                    <li>Tag Buttons</li>
-                </ol>
+                <div class="invisible docs-component" id="buttons-docs">
+                    <h1>Buttons</h1>
+                    <p>Buttons are very important part of any website because buttons can link all the things and gives
+                        a
+                        good user experience.</p>
+                    <p>Ui-Component-library provides different categories of buttons, you can pick any of them according
+                        to your
+                        requirement</p>
+                    <ol>
+                        <li>Solid Buttons</li>
+                        <li>Outlined Buttons</li>
+                        <li>Tag Buttons</li>
+                    </ol>
 
-                <h2>Solid Buttons</h2>
-                <p>These buttons are build with <code>button</code> tag and <code>anchor</code> tag so you can add link
-                    here also
-                </p>
-                <div class="solid-btn">
-                    <a href="#"><button class="btn btn-primary">Primary</button></a>
-                    <a href="#"><button class="btn btn-secondary">Secondary</button></a>
-                    <a href="#"><button class="btn btn-success">Success</button></a>
-                    <a href="#"><button class="btn btn-danger">Danger</button></a>
-                    <a href="#"><button class="btn btn-warning">Warning</button></a>
-                    <a href="#"><button class="btn btn-info">Info</button></a>
-                    <a href="#"><button class="btn btn-light">Light</button></a>
-                    <a href="#"><button class="btn btn-dark">Dark</button></a>
-                    <a href="#"><button class="btn btn-link">Link</button></a>
-                </div>
-                <pre class="language-html"><code>&lt;a href="#"&gt;&lt;button class="btn btn-primary"&gt;Primary&lt;/button&gt;&lt;/a&gt;
+                    <h2>Solid Buttons</h2>
+                    <p>These buttons are build with <code>button</code> tag and <code>anchor</code> tag so you can add
+                        link
+                        here also
+                    </p>
+                    <div class="solid-btn">
+                        <a href="#"><button class="btn btn-primary">Primary</button></a>
+                        <a href="#"><button class="btn btn-secondary">Secondary</button></a>
+                        <a href="#"><button class="btn btn-success">Success</button></a>
+                        <a href="#"><button class="btn btn-danger">Danger</button></a>
+                        <a href="#"><button class="btn btn-warning">Warning</button></a>
+                        <a href="#"><button class="btn btn-info">Info</button></a>
+                        <a href="#"><button class="btn btn-light">Light</button></a>
+                        <a href="#"><button class="btn btn-dark">Dark</button></a>
+                        <a href="#"><button class="btn btn-link">Link</button></a>
+                    </div>
+                    <pre class="language-html"><code>&lt;a href="#"&gt;&lt;button class="btn btn-primary"&gt;Primary&lt;/button&gt;&lt;/a&gt;
 &lt;a href="#"&gt;&lt;button class="btn btn-secondary"&gt;Secondary&lt;/button&gt;&lt;/a&gt;
 &lt;a href="#"&gt;&lt;button class="btn btn-success"&gt;Success&lt;/button&gt;&lt;/a&gt;
 &lt;a href="#"&gt;&lt;button class="btn btn-danger"&gt;Danger&lt;/button&gt;&lt;/a&gt;
@@ -391,22 +395,23 @@
 
 
 
-                <h2>Outlined Buttons</h2>
-                <p>These buttons are build with <code>button</code> tag and <code>anchor</code> tag so you can add link
-                    here. If you not need to add link in button then you can just remove <code>anchor</code> tag.
-                </p>
-                <div class="outlined-btn">
-                    <a href="#"><button class="btn btn-outlined-primary">Primary</button></a>
-                    <a href="#"><button class="btn btn-outlined-secondary">Secondary</button></a>
-                    <a href="#"><button class="btn btn-outlined-success">Success</button></a>
-                    <a href="#"><button class="btn btn-outlined-danger">Danger</button></a>
-                    <a href="#"><button class="btn btn-outlined-warning">Warning</button></a>
-                    <a href="#"><button class="btn btn-outlined-info">Info</button></a>
-                    <a href="#"><button class="btn btn-outlined-light">Light</button></a>
-                    <a href="#"><button class="btn btn-outlined-dark">Dark</button></a>
-                    <a href="#"><button class="btn btn-outlined-link">Link</button></a>
-                </div>
-                <pre class="language-html"><code>&lt;a href="#"&gt;&lt;button class="btn btn-outlined-primary"&gt;Primary&lt;/button&gt;&lt;/a&gt;
+                    <h2>Outlined Buttons</h2>
+                    <p>These buttons are build with <code>button</code> tag and <code>anchor</code> tag so you can add
+                        link
+                        here. If you not need to add link in button then you can just remove <code>anchor</code> tag.
+                    </p>
+                    <div class="outlined-btn">
+                        <a href="#"><button class="btn btn-outlined-primary">Primary</button></a>
+                        <a href="#"><button class="btn btn-outlined-secondary">Secondary</button></a>
+                        <a href="#"><button class="btn btn-outlined-success">Success</button></a>
+                        <a href="#"><button class="btn btn-outlined-danger">Danger</button></a>
+                        <a href="#"><button class="btn btn-outlined-warning">Warning</button></a>
+                        <a href="#"><button class="btn btn-outlined-info">Info</button></a>
+                        <a href="#"><button class="btn btn-outlined-light">Light</button></a>
+                        <a href="#"><button class="btn btn-outlined-dark">Dark</button></a>
+                        <a href="#"><button class="btn btn-outlined-link">Link</button></a>
+                    </div>
+                    <pre class="language-html"><code>&lt;a href="#"&gt;&lt;button class="btn btn-outlined-primary"&gt;Primary&lt;/button&gt;&lt;/a&gt;
 &lt;a href="#"&gt;&lt;button class="btn btn-outlined-secondary"&gt;Secondary&lt;/button&gt;&lt;/a&gt;
 &lt;a href="#"&gt;&lt;button class="btn btn-outlined-success"&gt;Success&lt;/button&gt;&lt;/a&gt;
 &lt;a href="#"&gt;&lt;button class="btn btn-outlined-danger"&gt;Danger&lt;/button&gt;&lt;/a&gt;
@@ -418,68 +423,71 @@
 
 
 
-                <h2>Tag Buttons</h2>
+                    <h2>Tag Buttons</h2>
 
-                <p>Some of Tag buttons will work with form so you can use <code>Submit</code>, <code>Reset</code> button
-                    to submit
-                    the form or reset the
-                    entered value in the form.</p>
-                <p>In the <code>Link</code> Button you can add Link of another page/url or any ID of your document to
-                    redirect there.</p>
+                    <p>Some of Tag buttons will work with form so you can use <code>Submit</code>, <code>Reset</code>
+                        button
+                        to submit
+                        the form or reset the
+                        entered value in the form.</p>
+                    <p>In the <code>Link</code> Button you can add Link of another page/url or any ID of your document
+                        to
+                        redirect there.</p>
 
-                <div class="tags-btn">
-                    <button type="submit" class="btn btn-tags">Button</button>
-                    <input type="reset" class="btn btn-tags" value="Reset">
-                    <input type="button" class="btn btn-tags" value="Input">
-                    <input type="submit" class="btn btn-tags" value="Submit">
-                    <a href="#" class="btn btn-tags">Link</a>
-                </div>
-                <pre class="language-html"><code>&lt;button type="submit" class="btn btn-tags"&gt;Button&lt;/button&gt;
+                    <div class="tags-btn">
+                        <button type="submit" class="btn btn-tags">Button</button>
+                        <input type="reset" class="btn btn-tags" value="Reset">
+                        <input type="button" class="btn btn-tags" value="Input">
+                        <input type="submit" class="btn btn-tags" value="Submit">
+                        <a href="#" class="btn btn-tags">Link</a>
+                    </div>
+                    <pre class="language-html"><code>&lt;button type="submit" class="btn btn-tags"&gt;Button&lt;/button&gt;
 &lt;input type="reset" class="btn btn-tags" value="Reset"&gt;
 &lt;input type="button" class="btn btn-tags" value="Input"&gt;
 &lt;input type="submit" class="btn btn-tags" value="Submit"&gt;
 &lt;a href="#" class="btn btn-primary"&gt;Link&lt;/a&gt;</code></pre>
 
-            </div>
+                </div>
 
 
             </div>
             <div class="intro" id="card-docs">
                 <!-- Card Component -->
 
-            <div class="invisible docs-component" id="card-docs">
-                <h1>Cards</h1>
-                <p>A <b>card</b> is a flexible and extensible content container. It includes options for headers and
-                    footers, a
-                    wide variety of content, contextual background colors, and powerful display options</p>
-                <p>Ui-Component-library provides different types of Cards, you can pick any of them
-                    according to your
-                    requirement. Just Add CDN Link in your <code>head</code> tag and copy-paste the HTML code then you
-                    will
-                    get a card.
-                </p>
+                <div class="invisible docs-component" id="card-docs">
+                    <h1>Cards</h1>
+                    <p>A <b>card</b> is a flexible and extensible content container. It includes options for headers and
+                        footers, a
+                        wide variety of content, contextual background colors, and powerful display options</p>
+                    <p>Ui-Component-library provides different types of Cards, you can pick any of them
+                        according to your
+                        requirement. Just Add CDN Link in your <code>head</code> tag and copy-paste the HTML code then
+                        you
+                        will
+                        get a card.
+                    </p>
 
-                <h2>Sample Cards - 1</h2>
-                <div class="card-1">
-                    <div class="imgText">
-                        <div class="img">
-                            <img src="/image/card-img-1.png" alt="image">
+                    <h2>Sample Cards - 1</h2>
+                    <div class="card-1">
+                        <div class="imgText">
+                            <div class="img">
+                                <img src="/image/card-img-1.png" alt="image">
+                            </div>
+                            <div class="text">
+                                <h2>Content Heading</h1>
+                                    <p>this is the body of content</p>
+                            </div>
                         </div>
-                        <div class="text">
-                            <h2>Content Heading</h1>
-                                <p>this is the body of content</p>
+                        <div class="below">
+                            <a href="#">READ</a>
+                            <a href="#">BOOKMARK</a>
+                            <span>🤍</span>
+                            <span><img class="card-1-icon" src="/image/share-icon-card.svg" /></span>
+                            <span><img class="card-1-icon" src="/image/vertical-three-dot.png" /></span>
                         </div>
                     </div>
-                    <div class="below">
-                        <a href="#">READ</a>
-                        <a href="#">BOOKMARK</a>
-                        <span>🤍</span>
-                        <span><img class="card-1-icon" src="/image/share-icon-card.svg" /></span>
-                        <span><img class="card-1-icon" src="/image/vertical-three-dot.png" /></span>
-                    </div>
-                </div>
 
-                <pre class="language-html"><code>&lt;div class="card-1"&gt;
+                    <pre class="language-html"><code>&lt;div class="card-1"&gt;
     &lt;div class="imgText"&gt;
         &lt;div class="img"&gt;
             &lt;img src="/image/card-img-1.png" alt="image"&gt;
@@ -498,25 +506,25 @@
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
-                <h2>Sample Cards - 2</h2>
+                    <h2>Sample Cards - 2</h2>
 
-                <div class="card-2">
-                    <div class="img">
-                        <img src="/image/flower-card.jpg" alt="pic">
+                    <div class="card-2">
+                        <div class="img">
+                            <img src="/image/flower-card.jpg" alt="pic">
+                        </div>
+                        <div class="content">
+                            <h2>Content Heading</h2>
+                            <small>Sub Heading</small>
+                            <p>This is the content paragraph.</p>
+                            <span class="price">Rs. 999</span>
+                            <span class="orgPrice">Rs.1099</span>
+                            <span class="discount">10%</span>
+                        </div>
+                        <div class="card-2-btn"><a href="#"><img src="/image/cart-card.svg" />Add to
+                                cart</a href="#"></div>
                     </div>
-                    <div class="content">
-                        <h2>Content Heading</h2>
-                        <small>Sub Heading</small>
-                        <p>This is the content paragraph.</p>
-                        <span class="price">Rs. 999</span>
-                        <span class="orgPrice">Rs.1099</span>
-                        <span class="discount">10%</span>
-                    </div>
-                    <div class="card-2-btn"><a href="#"><img src="/image/cart-card.svg" />Add to
-                            cart</a href="#"></div>
-                </div>
 
-                <pre class="language-html"><code>&lt;div class="card-2"&gt;
+                    <pre class="language-html"><code>&lt;div class="card-2"&gt;
     &lt;div class="img"&gt;
         &lt;img src="/image/flower-card.jpg" alt=""&gt;
     &lt;/div&gt;
@@ -533,21 +541,21 @@
 &lt;/div&gt;
                 </code></pre>
 
-                <h2>Sample Cards - 3</h2>
-                <div class="card-3">
-                    <div class="img">
-                        <img src="/image/image-card-3.jpg" alt="pic">
+                    <h2>Sample Cards - 3</h2>
+                    <div class="card-3">
+                        <div class="img">
+                            <img src="/image/image-card-3.jpg" alt="pic">
+                        </div>
+                        <div class="content">
+                            <h2>Content Heading</h2>
+                            <small>Sub Heading</small>
+                            <p>This is the content paragraph.</p>
+                        </div>
+                        <div class="card-3-btn"><a href="#">Go Somewhere</a href="#">
+                        </div>
                     </div>
-                    <div class="content">
-                        <h2>Content Heading</h2>
-                        <small>Sub Heading</small>
-                        <p>This is the content paragraph.</p>
-                    </div>
-                    <div class="card-3-btn"><a href="#">Go Somewhere</a href="#">
-                    </div>
-                </div>
 
-                <pre class="language-html"><code>&lt;div class="card-3"&gt;
+                    <pre class="language-html"><code>&lt;div class="card-3"&gt;
     &lt;div class="img"&gt;
         &lt;img src="/image/image-card-3.jpg" alt="pic"&gt;
     &lt;/div&gt;
@@ -560,22 +568,23 @@
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
-            </div>
+                </div>
             </div>
             <div class="intro" id="navbar-docs">
                 <h1>Navbar</h1>
                 <p>Navigation bar is used to navigate through the web apps or websites. This navigation component is
                     responsive. It is a hamburger menu in Android devices.</p>
-                <p>Ui-Component-Library provides a <b>responsive</b> navbar which works in all devices like desktop, android and
+                <p>Ui-Component-Library provides a <b>responsive</b> navbar which works in all devices like desktop,
+                    android and
                     tablets
                     etc.
                 </p>
                 <div class="mobile-desktop-nav-preview">
-                    <b>Desktop</b>                    
+                    <b>Desktop</b>
                     <div class="desktop">
                         <img src="./image/desktop.png" alt="">
                     </div>
-                    <b>Mobile & Tablets</b> 
+                    <b>Mobile & Tablets</b>
                     <div class="mobile">
                         <img src="./image/mobile.png" alt="">
                     </div>
@@ -607,54 +616,56 @@
             <div class="intro" id="login-docs">
                 <!-- Login Component  -->
 
-            <div class="invisible docs-component" id="login-docs">
-                <h1>Login</h1>
-                <p>Login Form is used to login for user account. <b>Ui-Component-library</b> provides login form also you
-                    can just add CDN link of <code>CSS</code> and <code>JavaScript</code>, copy-paste the below code
-                    into your
-                    document and you
-                    will get a
-                    very responsive and awesome Login form in your website. You can change the width of the form using
-                    className.
-                </p>
+                <div class="invisible docs-component" id="login-docs">
+                    <h1>Login</h1>
+                    <p>Login Form is used to login for user account. <b>Ui-Component-library</b> provides login form
+                        also you
+                        can just add CDN link of <code>CSS</code> and <code>JavaScript</code>, copy-paste the below code
+                        into your
+                        document and you
+                        will get a
+                        very responsive and awesome Login form in your website. You can change the width of the form
+                        using
+                        className.
+                    </p>
 
-                <h2>Login Form - 1</h2>
-                <div class="main-login-preview">
-                    <div class="main_div">
-                        <div class="title">Login Form</div>
-                        <div class="social_icons">
-                          <a href="#"><i class="fab fa-facebook-f"></i> <span>Facebook</span></a>
-                          <a href="#" class="google"><i class="fab fa-google"></i><span>Gmail</span></a>
+                    <h2>Login Form - 1</h2>
+                    <div class="main-login-preview">
+                        <div class="main_div">
+                            <div class="title">Login Form</div>
+                            <div class="social_icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i> <span>Facebook</span></a>
+                                <a href="#" class="google"><i class="fab fa-google"></i><span>Gmail</span></a>
+                            </div>
+                            <form action="#">
+                                <div class="input_box">
+                                    <input type="text" placeholder="Email or Phone" required>
+                                    <div class="icon"><i class="fas fa-user"></i></div>
+                                </div>
+                                <div class="input_box">
+                                    <input type="password" placeholder="Password" required>
+                                    <div class="icon"><i class="fas fa-lock"></i></div>
+                                </div>
+                                <div class="option_div">
+                                    <div class="check_box">
+                                        <input type="checkbox">
+                                        <span>Remember me</span>
+                                    </div>
+                                    <div class="forget_div">
+                                        <a href="#">Forgot password?</a>
+                                    </div>
+                                </div>
+                                <div class="input_box button">
+                                    <input type="submit" value="Login">
+                                </div>
+                                <div class="sign_up">
+                                    Not a member? <a href="#">Signup now</a>
+                                </div>
+                            </form>
                         </div>
-                        <form action="#">
-                          <div class="input_box">
-                            <input type="text" placeholder="Email or Phone" required>
-                            <div class="icon"><i class="fas fa-user"></i></div>
-                          </div>
-                          <div class="input_box">
-                            <input type="password" placeholder="Password" required>
-                            <div class="icon"><i class="fas fa-lock"></i></div>
-                          </div>
-                          <div class="option_div">
-                            <div class="check_box">
-                              <input type="checkbox">
-                              <span>Remember me</span>
-                            </div>
-                            <div class="forget_div">
-                              <a href="#">Forgot password?</a>
-                            </div>
-                          </div>
-                          <div class="input_box button">
-                            <input type="submit" value="Login">
-                          </div>
-                          <div class="sign_up">
-                            Not a member? <a href="#">Signup now</a>
-                          </div>
-                        </form>
-                      </div>
-                </div>
+                    </div>
 
-                <pre class="language-html"><code>&lt;div class="main_div"&gt;
+                    <pre class="language-html"><code>&lt;div class="main_div"&gt;
     &lt;div class="title"&gt;Login Form&lt;/div&gt;
     &lt;div class="social_icons"&gt;
         &lt;a href="#"&gt;&lt;i class="fab fa-facebook-f"&gt;&lt;/i&gt; &lt;span&gt;Facebook&lt;/span&gt;&lt;/a&gt;
@@ -687,48 +698,48 @@
     &lt;/form&gt;
 &lt;/div&gt;</code></pre>
 
-                <h2>Login Form - 2</h2>
+                    <h2>Login Form - 2</h2>
 
-                <div class="main-login-preview">
+                    <div class="main-login-preview">
 
-                    <div class="login-container-1">
-                        <form action="">
-                            <h3>Log in</h3>
-                            <div class="inputBox">
-                                <span>Username</span>
-                                <div class="box">
-                                    <div class="icon">
-                                        <img src="/image/user-icon.svg" alt="">
+                        <div class="login-container-1">
+                            <form action="">
+                                <h3>Log in</h3>
+                                <div class="inputBox">
+                                    <span>Username</span>
+                                    <div class="box">
+                                        <div class="icon">
+                                            <img src="/image/user-icon.svg" alt="">
+                                        </div>
+                                        <input type="text" placeholder="username">
                                     </div>
-                                    <input type="text" placeholder="username">
                                 </div>
-                            </div>
-                            <div class="inputBox">
-                                <span>Password</span>
-                                <div class="box">
-                                    <div class="icon">
-                                        <img src="/image/lock-closed-icon.svg" alt="">
+                                <div class="inputBox">
+                                    <span>Password</span>
+                                    <div class="box">
+                                        <div class="icon">
+                                            <img src="/image/lock-closed-icon.svg" alt="">
+                                        </div>
+                                        <input type="password" placeholder="password">
                                     </div>
-                                    <input type="password" placeholder="password">
                                 </div>
-                            </div>
-                            <label for="">
-                                <input type="checkbox" name="" id=""> Remember me
-                            </label>
-                            <div class="inputBox">
-                                <div class="box">
-                                    <input type="submit" value="Log in">
+                                <label for="">
+                                    <input type="checkbox" name="" id=""> Remember me
+                                </label>
+                                <div class="inputBox">
+                                    <div class="box">
+                                        <input type="submit" value="Log in">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="forget-pass">
-                                <a href="#" class="forgot">Forget Password</a>
-                            </div>
-                        </form>
+                                <div class="forget-pass">
+                                    <a href="#" class="forgot">Forget Password</a>
+                                </div>
+                            </form>
+                        </div>
+
                     </div>
 
-                </div>
-
-                <pre class="language-html"><code>&lt;div class="login-container-1"&gt;
+                    <pre class="language-html"><code>&lt;div class="login-container-1"&gt;
     &lt;form action=""&gt;
         &lt;h3&gt;Log in&lt;/h3&gt;
         &lt;div class="inputBox"&gt;
@@ -763,22 +774,22 @@
     &lt;/form&gt;
 &lt;/div&gt;</code></pre>
 
-                <br>
+                    <br>
 
 
-                <h2>Login Form - 3</h2>
-                <div class="main-login-preview">
-                    <form action="" class="login-container">
-                        <h3><span>Login Panel</span></h3>
-                        <input id="userName" type="text" placeholder="username" required autocomplete="off">
-                        <input id="password" type="password" placeholder="Password" required>
-                        <input type="submit" value="Log in">
-                        <div class="result"></div>
-                        <p>⭐ Length of Password Should be atleast 8</p>
-                    </form>
-                </div>
+                    <h2>Login Form - 3</h2>
+                    <div class="main-login-preview">
+                        <form action="" class="login-container">
+                            <h3><span>Login Panel</span></h3>
+                            <input id="userName" type="text" placeholder="username" required autocomplete="off">
+                            <input id="password" type="password" placeholder="Password" required>
+                            <input type="submit" value="Log in">
+                            <div class="result"></div>
+                            <p>⭐ Length of Password Should be atleast 8</p>
+                        </form>
+                    </div>
 
-                <pre class="language-html"><code>&lt;form action="" class="login-container"&gt;
+                    <pre class="language-html"><code>&lt;form action="" class="login-container"&gt;
     &lt;h3&gt;Login Panel&lt;/h3&gt;
     &lt;input id="userName" type="text" placeholder="user name" required autocomplete="off"&gt;
     &lt;input id="password" type="password" placeholder="Password" required&gt;
@@ -786,117 +797,215 @@
     &lt;div class="result"&gt;&lt;/div&gt;
     &lt;p&gt;⭐ Length of Password Should be atleast 8&lt;/p&gt;
 &lt;/form&gt;</code></pre>
-            </div>
+                </div>
 
             </div>
             <div class="intro" id="loader-docs">
                 <!-- Loader Component  -->
 
-            <div class="invisible docs-component" id="loader-docs">
-                <h1>Loader</h1>
-                <p>Loader activates when the page is loading and is shows a loading effect on website</p>
-                <p>WebHelpUI provides different types of Loader, You can use this by just adding <code>CSS</code> and
-                    <code>JS</code> CDN
-                    Link into your document.
-                </p>
-                <p>Place the JavaScript Link at the end of body tag.</p>
-                <ol>
-                    <li><a href="#loader-1">Loader-1</a></li>
-                    <li><a href="#loader-2">Loader-2</a></li>
-                    <li><a href="#loader-3">Loader-3</a></li>
-                    <li><a href="#loader-4">Loader-4</a></li>
-                    <li><a href="#loader-5">Loader-5</a></li>
-                    <li><a href="#loader-6">Loader-6</a></li>
-                    <li><a href="#loader-1">Loader-1</a></li>
-                    <li><a href="#loader-7">Loader-7</a></li>
-                    <li><a href="#loader-8">Loader-8</a></li>
-                </ol>
+                <div class="invisible docs-component" id="loader-docs">
+                    <h1>Loader</h1>
+                    <p>Loader activates when the page is loading and is shows a loading effect on website</p>
+                    <p>WebHelpUI provides different types of Loader, You can use this by just adding <code>CSS</code>
+                        and
+                        <code>JS</code> CDN
+                        Link into your document.
+                    </p>
+                    <p>Place the JavaScript Link at the end of body tag.</p>
+                    <ol>
+                        <li><a href="#loader-1">Loader-1</a></li>
+                        <li><a href="#loader-2">Loader-2</a></li>
+                        <li><a href="#loader-3">Loader-3</a></li>
+                        <li><a href="#loader-4">Loader-4</a></li>
+                        <li><a href="#loader-5">Loader-5</a></li>
+                        <li><a href="#loader-6">Loader-6</a></li>
+                        <li><a href="#loader-1">Loader-1</a></li>
+                        <li><a href="#loader-7">Loader-7</a></li>
+                        <li><a href="#loader-8">Loader-8</a></li>
+                    </ol>
 
-                <h2 id="loader-1">Loader-1</h2>
-                <div class="loader-preview">
-                    <div class="whi-loader-preview">
-                        <img src="/image/loader-5.gif" alt="">
+                    <h2 id="loader-1">Loader-1</h2>
+                    <div class="loader-preview">
+                        <div class="whi-loader-preview">
+                            <img src="/image/loader-5.gif" alt="">
+                        </div>
                     </div>
-                </div>
 
-                <pre class="language-html"><code>&lt;div class="whi-loader"&gt;
+                    <pre class="language-html"><code>&lt;div class="whi-loader"&gt;
     &lt;img src="/image/loader-5.gif" alt=""&gt;
 &lt;/div&gt;</code></pre>
 
-                <h2 id="loader-2">Loader-2</h2>
-                <div class="loader-preview">
-                    <div class="whi-loader-preview">
-                        <img src="/image/loader-6.gif" alt="">
+                    <h2 id="loader-2">Loader-2</h2>
+                    <div class="loader-preview">
+                        <div class="whi-loader-preview">
+                            <img src="/image/loader-6.gif" alt="">
+                        </div>
                     </div>
-                </div>
-                <pre class="language-html"><code>&lt;div class="whi-loader"&gt;
+                    <pre class="language-html"><code>&lt;div class="whi-loader"&gt;
     &lt;img src="/image/loader-6.gif" alt=""&gt;
 &lt;/div&gt;</code></pre>
 
-                <h2 id="loader-3">Loader-3</h2>
-                <div class="loader-preview">
-                    <div class="whi-loader-preview">
-                        <img src="/image/loader-7.gif" alt="">
+                    <h2 id="loader-3">Loader-3</h2>
+                    <div class="loader-preview">
+                        <div class="whi-loader-preview">
+                            <img src="/image/loader-7.gif" alt="">
+                        </div>
                     </div>
-                </div>
 
-                <pre class="language-html"><code>&lt;div class="whi-loader"&gt;
+                    <pre class="language-html"><code>&lt;div class="whi-loader"&gt;
     &lt;img src="/image/loader-7.gif" alt=""&gt;
 &lt;/div&gt;</code></pre>
-                <h2 id="loader-4">Loader-4</h2>
-                <div class="loader-preview">
-                    <div class="whi-loader-preview">
-                        <img src="/image/loader-3.gif" alt="">
+                    <h2 id="loader-4">Loader-4</h2>
+                    <div class="loader-preview">
+                        <div class="whi-loader-preview">
+                            <img src="/image/loader-3.gif" alt="">
+                        </div>
                     </div>
-                </div>
 
-                <pre class="language-html"><code>&lt;div class="whi-loader"&gt;
+                    <pre class="language-html"><code>&lt;div class="whi-loader"&gt;
     &lt;img src="/image/loader-3.gif" alt=""&gt;
 &lt;/div&gt;</code></pre>
-                <h2 id="loader-5">Loader-5</h2>
-                <div class="loader-preview">
-                    <div class="whi-loader-preview">
-                        <img src="/image/loader-4.gif" alt="">
+                    <h2 id="loader-5">Loader-5</h2>
+                    <div class="loader-preview">
+                        <div class="whi-loader-preview">
+                            <img src="/image/loader-4.gif" alt="">
+                        </div>
                     </div>
-                </div>
 
-                <pre class="language-html"><code>&lt;div class="whi-loader"&gt;
+                    <pre class="language-html"><code>&lt;div class="whi-loader"&gt;
     &lt;img src="/image/loader-4.gif" alt=""&gt;
 &lt;/div&gt;</code></pre>
-                <h2 id="loader-6">Loader-6</h2>
-                <div class="loader-preview">
-                    <div class="whi-loader-preview">
-                        <img src="/image/loader.gif" alt="">
+                    <h2 id="loader-6">Loader-6</h2>
+                    <div class="loader-preview">
+                        <div class="whi-loader-preview">
+                            <img src="/image/loader.gif" alt="">
+                        </div>
                     </div>
-                </div>
 
-                <pre class="language-html"><code>&lt;div class="whi-loader"&gt;
+                    <pre class="language-html"><code>&lt;div class="whi-loader"&gt;
     &lt;img src="/image/loader.gif" alt=""&gt;
 &lt;/div&gt;</code></pre>
-                <h2 id="loader-7">Loader-7</h2>
-                <div class="loader-preview">
-                    <div class="whi-loader-preview">
-                        <img src="/image/loader-2.gif" alt="">
+                    <h2 id="loader-7">Loader-7</h2>
+                    <div class="loader-preview">
+                        <div class="whi-loader-preview">
+                            <img src="/image/loader-2.gif" alt="">
+                        </div>
                     </div>
-                </div>
 
-                <pre class="language-html"><code>&lt;div class="whi-loader"&gt;
+                    <pre class="language-html"><code>&lt;div class="whi-loader"&gt;
     &lt;img src="/image/loader-2.gif" alt=""&gt;
 &lt;/div&gt;</code></pre>
-                <h2 id="loader-8">Loader-8</h2>
-                <div class="loader-preview">
-                    <div class="whi-loader-preview">
-                        <img src="/image/loader-8.gif" alt="">
+                    <h2 id="loader-8">Loader-8</h2>
+                    <div class="loader-preview">
+                        <div class="whi-loader-preview">
+                            <img src="/image/loader-8.gif" alt="">
+                        </div>
                     </div>
-                </div>
 
-                <pre class="language-html"><code>&lt;div class="whi-loader"&gt;
+                    <pre class="language-html"><code>&lt;div class="whi-loader"&gt;
     &lt;img src="/image/loader-8.gif" alt=""&gt;
 &lt;/div&gt;</code></pre>
 
+                </div>
+
             </div>
+
+
+            <!-- progress bar start -->
+
+            <div class="intro" id="progress-bar-docs">
+
+                <h1> Progress Bar</h1>
+                <p>A progress bar can be used to show a user how far along he/she is in a process.</p>
+                <h2>Default Progress Bar</h2>
+                <p> To create a default progress bar, add a .progress class to a <code> &lt;div&gt; </code> element:
+                </p>
+
+                <pre class="language-html"><code>&lt;div class="progress"&gt;
+        &lt;div class="progress-bar" &gt;
+          &lt;span class="sr-only"&gt;70% Complete&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;</code></pre>
+
+
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar">
+
+                    </div>
+                </div>
+
+                <h2>Progress Bar With Label</h2>
+                <p>Remove the <code>.sr-only </code>class from the progress bar to show a visible percentage:</p>
+
+                <pre class="language-html"> <code>
+
+    &lt;div class="progress"&gt;
+    &lt;div class="progress-bar"  &gt;
+      70%
+    &lt;/div&gt;
+  &lt;/div&gt;
+</code></pre>
+
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                        aria-valuemax="100" style="width:70%">
+                        70%
+                    </div>
+                </div>
+
+                <h2>Rounded Progress bar</h2>
+                <pre class="language-html"><code> &lt;div class="progress-bar-2"&gt;
+    &lt;span class="progress-bar-fill" style="width: 70%;"&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+                <div class="progress-bar-2">
+                    <span class="progress-bar-fill" style="width: 70%;"></span>
+                </div>
             </div>
-            
+<!-- progess bar end -->
+
+<!-- dropdown start -->
+<div class="intro" id="alert-docs">
+    
+        <h2>Alerts</h2>
+ <b> UI-component library provides an easy way to create predefined alert messages:</b>
+
+        <div class="alert alert-success">
+          <strong>Success!</strong> This alert box could indicate a successful or positive action.
+        </div>
+        <div class="alert alert-info">
+          <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+        </div>
+        <div class="alert alert-warning">
+          <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+        </div>
+        <div class="alert alert-danger">
+          <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+        </div>
+      <p>Alerts are created with the <code> .alert</code>  class, followed by one of the four contextual classes <code> .alert-success</code>, <code>.alert-info</code>, <code>.alert-warning</code> or <code>.alert-danger:</code></p>
+
+
+      <pre class="language-html"><code>
+
+        &lt;div class="alert alert-success"&gt;
+  &lt;strong&gt;Success!&lt;/strong&gt; Indicates a successful or positive action.
+&lt;/div&gt;
+
+&lt;div class="alert alert-info"&gt;
+  &lt;strong&gt;Info!&lt;/strong&gt; Indicates a neutral informative change or action.
+&lt;/div&gt;
+
+&lt;div class="alert alert-warning"&gt;
+  &lt;strong&gt;Warning!&lt;/strong&gt; Indicates a warning that might need attention.
+&lt;/div&gt;
+
+&lt;div class="alert alert-danger"&gt;
+  &lt;strong&gt;Danger!&lt;/strong&gt; Indicates a dangerous or potentially negative action.
+&lt;/div&gt;
+      </code></pre>
+
+
+</div>
+
         </div>
 
 
