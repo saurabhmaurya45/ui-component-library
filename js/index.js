@@ -11,7 +11,7 @@ if (loader) {
 }
 
 let navstate = true;
-let leftLststate = true;
+let leftLststate = false;
 
 
 function mobileNavShow(){
@@ -39,11 +39,11 @@ function mobileLeftLstShow(){
         mobileNavShow();
     }
     if(leftLststate === true){
-        item.style.visibility = 'visible';
+        item.style.display = 'block';
         // navstate = !navstate;
     }
     else{
-        item.style.visibility = 'hidden';
+        item.style.display = 'none';
     }
     leftLststate = !leftLststate;
 }
@@ -60,6 +60,9 @@ for (i = 0; i < tablinks.length; i++) {
 }
 document.getElementById(tabName).style.display = "block";
 evt.currentTarget.className += " active";
+if(screen.width<=980){
+    mobileLeftLstShow();
+}
 }
 
 // Get the element with id="defaultOpen" and click on it
