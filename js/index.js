@@ -1,5 +1,5 @@
-var script = document.createElement('script');   
-script.src = './js/js/uiComponentLibrary.min.js'   
+let script = document.createElement('script');
+script.src = './js/js/uiComponentLibrary.min.js'
 document.head.appendChild(script);
 
 let loader = document.querySelector(".loader");
@@ -14,18 +14,18 @@ let navstate = true;
 let leftLststate = true;
 
 
-function mobileNavShow(){
+function mobileNavShow() {
     let navbar = document.querySelector(".navbar");
     let leftNav = document.querySelector(".left-nav");
     let rightNav = document.querySelector(".right-nav");
-    if(leftLststate === false){
+    if (leftLststate === false) {
         mobileLeftLstShow();
     }
-    if (navstate===true){
+    if (navstate === true) {
         navbar.style.height = "40vh";
         leftNav.style.display = "flex";
         rightNav.style.display = "flex";
-    }else{
+    } else {
         leftNav.style.display = 'none';
         rightNav.style.display = 'none';
         navbar.style.height = "48px";
@@ -33,35 +33,38 @@ function mobileNavShow(){
     navstate = !navstate;
 }
 
-function mobileLeftLstShow(){
+function mobileLeftLstShow() {
     let item = document.querySelector(".left-section");
-    if(navstate===false){
+    if (navstate === false) {
         mobileNavShow();
     }
-    if(leftLststate === true){
-        item.style.visibility = 'visible';
+    if (leftLststate === true) {
+        item.style.display = 'block';
         // navstate = !navstate;
     }
-    else{
-        item.style.visibility = 'hidden';
+    else {
+        item.style.display = 'none';
     }
     leftLststate = !leftLststate;
 }
 
 function tabFunc(evt, tabName) {
-let i, tabcontent, tablinks;
-tabcontent = document.getElementsByClassName("intro");
-for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-}
-tablinks = document.getElementsByClassName("tablinks");
-for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-}
-document.getElementById(tabName).style.display = "block";
-evt.currentTarget.className += " active";
+    let i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("intro");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+    if (screen.width <= 980) {
+        mobileLeftLstShow();
+    }
 }
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
-
+mobileLeftLstShow();

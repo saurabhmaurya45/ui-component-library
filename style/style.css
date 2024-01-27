@@ -230,5 +230,16 @@ code:not(.language-html code) {
    }
 }
 /* section 2 code snippet ends here */
+/* about section start here */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 600px) {
+  h1 {
+      font-size: 1.5em;
+  
+    }
+}
 
-
+/* about section ends here */

@@ -8,7 +8,6 @@
   height: 100vh;
   width: 100%;
   background-color: #8f9cf3;
-  z-index: 1;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -29,11 +28,6 @@
   overflow-y: scroll;
 }
 
-@media (max-width: 780px) {
-  .main-section .left-section {
-    visibility: hidden;
-  }
-}
 
 .doc-text h2 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -228,6 +222,7 @@
   flex-direction: column;
   overflow-y: scroll;
 }
+
 .center-section h1,h2{
   color:#0e0f46;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -277,11 +272,6 @@
   overflow: hidden;
 }
 
-@media (max-width: 980px) {
-  .main-section .right-section {
-    visibility: hidden;
-  }
-}
 .line {
   height: 2px;
   width: 150px;
@@ -341,5 +331,33 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #8292f8;
   }
+
   /* introduction doc -css end */
   
+  /* responsive css start */
+
+  @media (max-width: 980px) {
+    .main-section .left-section {
+      display: none;
+      width: 70%;
+    }
+    .main-section .center-section {
+      width: 100%;
+      margin-right: 0px;
+      padding: 0px 10px 0px 10px;
+    }
+    .center-section .intro{
+      padding-left: 10px;
+    }
+    .intro-list{
+      flex-direction: column;
+    }
+    .code-toolbar{
+      font-size: 12px;
+    }
+    .main-section .right-section {
+      display: none ;
+    }
+  }
+
+  /* responsive css end */

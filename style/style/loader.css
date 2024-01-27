@@ -14,8 +14,9 @@
 }
 
 .loader-preview .whi-loader-preview img {
-    width: 10rem;
+    width: 90px;
 }
+
 
 .whi-loader-preview {
     position: absolute;
