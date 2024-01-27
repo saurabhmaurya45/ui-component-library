@@ -23,7 +23,7 @@
     display: flex;
     /* background-color: green; */
     left: 10px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     width: 40%;
     padding: 10px;
