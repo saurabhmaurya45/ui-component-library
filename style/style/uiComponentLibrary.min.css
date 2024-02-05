@@ -9,6 +9,7 @@
 @import url("./progress.css");
 @import url("./avatar.css");
 @import url("./badges.css");
+@import url("./snackbar.css");
 /* nav-code */
 .desktop img {
     height: 46px;

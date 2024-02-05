@@ -154,8 +154,8 @@
                     <a href="#badges-docs">
                         <li class="tablinks" onclick="tabFunc(event,'badges-docs')">Badges</li>
                     </a>
-                    <a href="#">
-                        <li class="tablinks" onclick="tabFunc(event,'')"></li>
+                    <a href="#snackbar-docs">
+                        <li class="tablinks" onclick="tabFunc(event,'snackbar-docs')">Snack Bar</li>
                     </a>
                     <a href="#">
                         <li class="tablinks" onclick="tabFunc(event,'')"></li>
@@ -1424,9 +1424,60 @@
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span></code></pre><div class="toolbar"><div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div></div></div>
 
             </div>
-
             <!-- badges ends  -->
             
+            <!-- snack bar start -->
+            <div class="intro" id="snackbar-docs">
+                <h1>SnackBar</h1>
+                <p>This component can be used for toast or snackbar component. Snackbar is to used show message that
+                    need user action </p>
+                <p>You can use snackbar to show notifications and error,sucess and warn messages.</p><br>
+                <p>UI-Component UI-Component-Library provides different types of snackbars based on the situation, you can pick any of them
+                    according to your
+                    requirement.</p>
+
+                <div class="snackbar-preview">
+
+                    <button class="success-warn-btn">Success</button>
+                    <div class="success-snackbar-warning" style="display: none;">
+                        Completed Successfully
+                    </div>
+
+
+                    <button class="error-warn-btn">Error</button>
+                    <div class="error-snackbar-warning" style="display: none;">
+                        Error 404
+                    </div>
+
+
+                    <button class="warning-warn-btn">Warning</button>
+                    <div class="warning-snackbar-warning" style="display: none;">
+                        Warning! Accessing Wrong File
+                    </div>
+
+                </div>
+
+
+                <div class="code-toolbar"><pre class="language-html" tabindex="0"><code class="language-html"><span class="token comment">&lt;!-- Success SnackBar  --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>success-warn-btn<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Success<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>success-snackbar-warning<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    Completed Successfully
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- Error SnackBar  --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>error-warn-btn<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Error<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>error-snackbar-warning<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    Error 404
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- Warning SnackBar  --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>warning-warn-btn<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Warning<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>warning-snackbar-warning<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    Warning! Accessing Wrong File
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre><div class="toolbar"><div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div></div></div>
+
+            </div>
+            <!-- snack bar ends -->
 
         </div>
         
