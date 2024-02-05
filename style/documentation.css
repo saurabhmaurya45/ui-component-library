@@ -339,6 +339,7 @@
 
   @media (max-width: 980px) {
     .main-section .left-section {
+      position: absolute;
       display: none;
       width: 70%;
     }
