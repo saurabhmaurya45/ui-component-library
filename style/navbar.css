@@ -97,11 +97,12 @@
       0 0 21px rgb(138, 59, 158);
   }
   
-  .navbar .linkedin, .navbar .git-logo, .navbar .dark-mode {
+  .navbar .linkedin, .navbar .git-logo, .navbar .dark-mode,.navbar .email-icon {
     margin: 0px 5px;
     padding: 3px;
     height: 28px;
     width: 28px;
+    color:#3399FE;
     background-color: azure;
     border-radius: 4px;
     display: flex;
