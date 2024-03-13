@@ -102,14 +102,15 @@
     padding: 3px;
     height: 28px;
     width: 28px;
-    color:#3399FE;
     background-color: azure;
     border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
+  .navbar .email-icon i{
+    color:#3399FE;
+  }
   .linkedin img, .git-logo img, .dark-mode img {
     height: 25px;
     width: 25px;
